@@ -1,0 +1,146 @@
+/*Brandon Shrigley 8863937*/
+
+html{
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-size: 20px;
+    line-height : 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font : normal normal normal 20px/1.5 Verdana, Arial, Helvetica, sans-serif;
+}
+body{
+
+    width : 100%; /*% relative to parent element*/
+    max-width : 1300px; /*absolute units px*/
+    margin : 0 auto; /*margin set to auto for right and left center elemnts inside their parent*/
+    
+
+}
+
+p{
+    color:blueviolet;/* Set text color to blueviolet */
+
+}
+h2{
+    color:rgb(48, 135, 14);/* Set text color to blueviolet */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+h1{
+    color : rgb(48, 135, 14) !important;/* Set text color to red */
+}
+p{
+    color : #000000;
+}
+
+blockquote{
+    font-size : 1.5rem;
+}
+blockquote > cite{
+    
+    color: #000000;
+    font-size : .75em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+q{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+h2 + blockquote{
+
+    font-size : 1.5rem;
+}
+p{
+    font-size : 1.5rem;
+}
+h1, h2{
+    font-variant: small-caps;
+}
+h1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 43%;
+}
+footer p{
+    font-size : 0.5rem;
+    color : black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 14%;
+
+}
+main{
+    background-color: hsla(27, 45%, 84%, 0.945);  /*applies background colour*/
+}
+/*multiple selector*/
+footer, header{
+    height : 10vh; 
+    margin : 1rem; 
+    border : .5rem double #7e876c; 
+    /*background colour of title and copyright*/
+    background-image: linear-gradient(#f3a616e2 50%,  #389204dd 50%);
+}
+.subHeadings-figure{
+    height : 60%;
+    width : 60%;
+    text-align: center;/*center-align text*/
+   
+}
+.subHeadings-figure img{
+    height : 60%; /*set width to 60% of the parent element*/
+    width : 60%;/*set height to 60% of the parent element*/
+    border-radius : 1rem; /*relevative to the root units*/
+    padding : .5rem; /*relevative to the root units*/
+
+
+}
+/*Multiple Elements and Selectors*/
+video, iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+main{
+    margin : 1rem; 
+}
+#relative-path-image{
+    border : .25rem solid rgb(99, 1, 99); /*relevative to the root units*/
+    color : rgb(51, 151, 2);
+    /*rounds the corners of the border
+    border-radius*/
+    border-radius : 1rem; /*relevative to the root units*/
+    background-color: hsla(96, 82%, 63%, 0.799); /*applies background colour*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#absolute-path-image{ 
+    border : .25rem solid rgb(16, 8, 79); /*relevative to the root units*/
+      /*rounds the corners of the border
+    border-radius*/
+    border-radius : 1rem; /*relevative to the root units*/
+    color : rgb(16, 8, 79);
+    background-color: hsla(114, 95%, 71%, 0.5); /*applies background colour*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#quote{
+      /*border shorthand property width, style colour */ 
+    border : .25rem solid rgb(212, 150, 95);
+   /* Specify a horizontal and a vertical shadow*/
+   box-shadow: .5rem .5rem .5rem rgba(44, 188, 0, 0.836); /*relevative to the root units*/
+}
